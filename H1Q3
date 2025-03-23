@@ -1,0 +1,23 @@
+﻿#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int popularity;
+    int size;
+    int homevalue;
+
+    printf("Hi!\n");
+    printf("Please enter the popularity:\n");
+    scanf("%d", &popularity);
+
+    printf("Secondly, please enter the size:\n");
+    scanf("%d", &size);
+
+    
+    homevalue = (pow(popularity, 3)) + (pow(size, 2)) * 1000;
+
+    printf("The homevalue is: %d\n", homevalue);
+
+    return 0;
+}
